@@ -7,6 +7,7 @@ public class StringReverse {
     public static void main(String[] args) {
         StringReverse.reverseChar();
         StringReverse.reverseStr();
+        StringReverse.reverseInOrder();
         String actual = "this is a test string";
 
         int len = actual.length();
@@ -32,6 +33,16 @@ public class StringReverse {
         String str2 = "I am going to reverse this string using Buffer";
          StringBuffer sb= new StringBuffer(str2);
          rev=sb.reverse().toString();
+        System.out.println(rev);
+    }
+    public static void reverseInOrder(){
+       String str3="This is a new way of reversing";
+      String a[]= str3.split("");
+      int S=a.length;
+     for (int i=S-1;i>=30;i++){
+       rev = rev+a[i];
+
+     }
         System.out.println(rev);
     }
 }
